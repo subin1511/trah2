@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrap Dealer Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #839bb0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Additional Styles */
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    #image {
+      margin-bottom: 10px;
+    }
+
+    #city {
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Scrap Dealer Registration</h2>
+    <form>
+      <label for="businessName">Business Name:</label>
+      <input type="text" id="businessName" name="businessName" required>
+
+      <label for="contactPerson">Contact Person:</label>
+      <input type="text" id="contactPerson" name="contactPerson" required>
+
+      <label for="contactNumber">Contact Number:</label>
+      <input type="text" id="contactNumber" name="contactNumber" required>
+
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="city">Location:</label>
+      <input type="text" id="city" name="city" required><br><br>
+
+
+      <label for="scrapTypes">Types of Scrap:</label>
+      <input type="checkbox" id="ferrous" name="scrapTypes[]" value="Ferrous Metals">
+      <label for="ferrous">Ferrous Metals</label>
+      <input type="checkbox" id="nonFerrous" name="scrapTypes[]" value="Non-Ferrous Metals">
+      <label for="nonFerrous">Non-Ferrous Metals</label><br><br>
+      <!-- Add more checkbox options for different scrap types -->
+
+      <label for="paymentMethods">Preferred Payment Methods:</label>
+      <input type="checkbox" id="cash" name="paymentMethods[]" value="Cash">
+      <label for="cash">Cash</label>
+      <input type="checkbox" id="bankTransfer" name="paymentMethods[]" value="Bank Transfer">
+      <label for="bankTransfer">Bank Transfer</label><br><br>
+      <!-- Add more checkbox options for different payment methods -->
+
+      <input type="submit" value="Submit">
+      <a  href="dealer2.html"></a>
+    
+    </form>
+  </div>
+</body>
+</html>
